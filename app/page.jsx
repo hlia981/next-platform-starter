@@ -45,6 +45,21 @@ export default function Page() {
                 <RandomQuote />
                 <Markdown content={postDynamicContentExplainer} />
             </section>
+            <Script id="chatbot-config" strategy="beforeInteractive">
+                {`
+                    window.chatbotConfig = {
+                        title: 'Fios Chatbot',
+                        primaryColor: '#667eea',
+                        backgroundColor: '#FFFFFF',
+                        textColor: '#2c3e50',
+                        buttonColor: '#667eea',
+                        buttonIconColor: '#FFFFFF',
+                        tooltipTheme: 'white-black',
+                        buttonSize: 'small',
+                        position: 'top-left',
+                    };
+                `}
+            </Script>
             <Script
                 src="https://storagefiosdev.blob.core.windows.net/public/fios-chatbot.prod.js"
                 strategy="afterInteractive"

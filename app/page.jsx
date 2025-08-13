@@ -89,7 +89,7 @@ export default function Page() {
             <Script id="chatbot-config" strategy="beforeInteractive">
                 {`
                     window.chatbotConfig = {
-                        title: 'FIOS Health Assistant',
+                        title: 'Simon Young's AI Assistant',
                         primaryColor: '#374151',
                         backgroundColor: '#FFFFFF',
                         textColor: '#374151',
@@ -98,6 +98,10 @@ export default function Page() {
                         tooltipTheme: 'white-gray',
                         buttonSize: 'small',
                         position: 'bottom-right',
+                        startingQuestions: [
+                            'Do I need a referral to see Simon?',
+                            'Can I eat/drink on the morning of surgery?',
+                        ],
                     };
                 `}
             </Script>

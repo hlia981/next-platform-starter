@@ -1,41 +1,60 @@
-# Next.js on Netlify Platform Starter
+# AI Chatbot Demo
 
-[Live Demo](https://nextjs-platform-starter.netlify.app/)
+A simple, clean demo website showcasing an AI-powered chatbot with a minimalist black and white design.
 
-A modern starter based on Next.js 14 (App Router), Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+## Features
 
-In this site, Netlify Core Primitives are used both implictly for running Next.js features (e.g. Route Handlers, image optimization via `next/image`, and more) and also explicitly by the user code.
+- **Clean Design**: Minimalist black and white theme
+- **AI Chatbot**: Integrated chatbot for user interaction
+- **Responsive**: Mobile-friendly design
+- **Fast**: Built with Next.js for optimal performance
 
-Implicit usage means you're using any Next.js functionality and everything "just works" when deployed - all the plumbing is done for you. Explicit usage is framework-agnostic and typically provides more features than what Next.js exposes.
+## Getting Started
 
-## Deploying to Netlify
+### Prerequisites
 
-This site requires [Netlify Next Runtime v5](https://docs.netlify.com/frameworks/next-js/overview/) for full functionality. That version is now being gradually rolled out to all Netlify accounts.
+- Node.js 18+ 
+- npm or yarn
 
-After deploying via the button below, please visit the **Site Overview** page for your new site to check whether it is already using the v5 runtime. If not, you'll be prompted to opt-in to to v5.
+### Installation
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-platform-starter)
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Developing Locally
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-1. Clone this repository, then run `npm install` in its root directory.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
+### Building for Production
 
+```bash
+npm run build
+npm start
 ```
-npm install netlify-cli@latest -g
-```
 
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
+## Usage
 
-```
-netlify link
-```
+1. Visit the website
+2. Click the chat button in the bottom right corner
+3. Start chatting with the AI assistant
+4. Experience natural conversations and get helpful responses
 
-4. Then, run the Next.js development server via Netlify CLI:
+## Technology Stack
 
-```
-netlify dev
-```
+- **Frontend**: Next.js 15, React 18
+- **Styling**: Tailwind CSS
+- **Deployment**: Netlify-ready
 
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+## Customization
+
+The chatbot configuration can be modified in `app/page.jsx` by updating the `chatbotConfig` object.
+
+## License
+
+This project is open source and available under the MIT License.

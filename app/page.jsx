@@ -14,7 +14,7 @@ export default function Page() {
                    FIOS Health chatbot is ready to help you with questions, 
                     provide information, and engage in meaningful conversations.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
                     <button 
                         onClick={() => document.querySelector('.chatbot-button')?.click()}
                         className="px-8 py-4 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors shadow-lg"

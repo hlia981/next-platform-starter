@@ -89,7 +89,7 @@ export default function Page() {
             <Script id="chatbot-config" strategy="beforeInteractive">
                 {`
                     window.chatbotConfig = {
-                        title: 'Simon Young's AI Assistant',
+                        title: 'Simon Young\'s AI Assistant',
                         primaryColor: '#374151',
                         backgroundColor: '#FFFFFF',
                         textColor: '#374151',

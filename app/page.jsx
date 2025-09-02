@@ -106,7 +106,7 @@ export default function Page() {
                 `}
             </Script>
             <Script
-                src="https://storagefiosdev.blob.core.windows.net/public/fios-chatbot.prod.js"
+                src="https://storagefiosprod.blob.core.windows.net/public/fios-chatbot.prod.js"
                 strategy="afterInteractive"
             />
         </div>
